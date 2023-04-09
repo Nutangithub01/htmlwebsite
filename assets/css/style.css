@@ -1,0 +1,199 @@
+.section2
+{
+	background: black;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img 
+{
+    height: 608px;
+    object-fit: cover;
+}
+.section
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.section3
+{
+	background: #d4eef9;
+}
+.justify-content-center
+{
+	justify-content: center;
+}
+.section4
+{
+	background: #d8f5d9;
+}
+.contact_section
+{
+	/*padding: 20px;*/
+	border: 2px solid black;
+}
+.section4 .form-horizontal .control-label
+{
+	text-align: left;
+}
+.contact_section form
+{
+	background: aliceblue;
+    padding: 20px;
+}
+.section5_img
+{
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+.section5
+{
+	background-image: url(../images/bg-6.jpg);
+	background-size: cover;	
+}
+.section5 .panel
+{
+	border: 2px solid black;
+	border-radius: 24px;
+}
+.section5 .panel-heading
+{
+	background: #6861BC;
+	color: white;
+	border-radius: 22px;
+}
+h1,h2
+{
+	font-weight: 600;
+}
+.bookcat
+{
+	border: 2px solid black;
+    background: linear-gradient(45deg, #5c83b6, #02111b);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+}
+.bookcat:hover 
+{
+	background: linear-gradient(45deg, #080808, #03b4f8);
+}
+.bookcat_row
+{
+	margin-top: 20px;
+}
+.section5 .nav-pills
+{
+	background: #e5d6d6;
+}
+.section6 .mail_cat
+{
+	background: #ECF1FA;
+	padding: 15px;
+}
+.section6 .mail_cat .list-group-item
+{
+	margin-top: 7px;
+    border-left: 4px solid blue;
+    padding: 15px 15px;
+    font-weight: 600;
+}
+.section6 .mail_cat .list-group-item.active,.section6 .mail_cat .list-group-item:hover 
+{
+    background: #6861BC none repeat scroll 0 0;
+    color: #fff;
+    border-left: 5px solid #483fb1;
+}
+.section6 .mail_cat .list-group-item.active .badge,.section6 .mail_cat .list-group-item:hover .badge
+{
+	background: white;
+	color: #6861BC;
+}
+.mailcat2
+{
+	text-align: center;
+	/*border: 2px solid black;*/
+
+}
+.mailcat2 .panel-danger>.panel-heading
+{
+	background: #6861BC;
+	color: white;
+}
+
+.table-bordered thead th {
+  background: #483fb1;
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  padding: 22px 0px;
+  border: 1px solid black;
+}
+
+.table-bordered td,
+.table-bordered th {
+  border: 1px solid black;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 600;
+  color: #4e5557;
+}
+
+.table-bordered tr>td:hover {
+  color: #fff;
+  background: #483fb1;
+}
+.table-bordered tbody tr:nth-of-type(odd) 
+{
+    background-color: rgb(227 221 221 / 80%);
+}
+.table-bordered tbody tr:nth-of-type(even) 
+{
+    /*background-color: rgba(17, 17, 17, 0.05);*/
+    background-color: white;
+}
+.section7 
+{
+	background: beige;
+}
+.footer
+{
+	background: #483fb1;
+	color: white;
+	padding: 20px;
+}
+.footer a
+{
+	color: white;
+}
+.menus
+{
+	font-weight: 600;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.section3 .pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.center
+{
+	text-align: center;
+}

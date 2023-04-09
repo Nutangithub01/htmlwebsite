@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Book Shoping</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="icon" type="text/css" href="assets/images/logo.png">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      /* div{
+    border: 1px solid black;
+  } */
+      blockquote {
+        border-left: 5px solid #3ebfa4;
+      }
+
+      #myalert {
+        width: 300px;
+        position: fixed;
+        margin-top: -15%;
+        margin-left: 70%;
+      }
+
+      .liblock1 {
+        /* display: none; */
+        width: 100px;
+        background-color: cadetblue;
+        padding: 5px;
+      }
+
+      .liblock {
+        display: none;
+        width: 100px;
+        background-color: cadetblue;
+        padding: 5px;
+      }
+
+      .mymenu:hover .liblock {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Create Navigation Bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#new_navbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>  
+          <a href="index.html"><img src="assets/images/logo.png"></a>
+          <!-- <a class="navbar-brand" href="#"> Book Shoping</a> -->
+
+        </div>
+        <div id="new_navbar" class="collapse navbar-collapse menus">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="basics.html"> Home</a>
+            </li>
+            <li>
+              <a href="forms.html"> About</a>
+            </li>
+            <li>
+              <a href="navbar.html"> Services</a>
+            </li>
+            <li>
+              <a href="navbar.html"> Team</a>
+            </li>
+            <li>
+              <a href="navbar.html"> Contacts</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="login.html">
+                <span class="glyphicon glyphicon-log-in"></span> Login </a>
+            </li>
+            <li>
+              <a href="registration.html">
+                <span class="glyphicon glyphicon-user"></span> Sign Up </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid" style="margin-top:50px ;">
+      <div class="row">
+        <!-- <div class="col-md-3"></div> -->
+        <div class="">
+          <div id="myslider" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myslider" data-slide-to="0" class="active"></li>
+              <li data-target="#myslider" data-slide-to="1"></li>
+              <li data-target="#myslider" data-slide-to="2"></li>
+            </ol>
+            <!-- Sliders -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="assets/images/bg-4.jpg" alt="Ocean">
+                <div class="carousel-caption">
+                  <h1>Book Store 1</h1>
+                  <p>Online shop the books</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets/images/bg-2.jpg" alt="Stock image">
+                <div class="carousel-caption">
+                  <h1>Book Store 2</h1>
+                  <p>Online shop the books</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets/images/bg-5.jpg" alt="Sky">
+                <div class="carousel-caption">
+                  <h1>Book Store 3</h1>
+                  <p>Online shop the books</p>
+                </div>
+              </div>
+            </div>
+            <!-- Control -->
+            <!-- <a href="#myslider" class="left carousel-control" data-slide="prev">
+              <span class="glyphicon glyphicon-menu-left"></span>
+            </a>
+            <a href="#myslider" class="right carousel-control" data-slide="next">
+              <span class="glyphicon glyphicon-menu-right"></span>
+            </a> -->
+          </div>
+        </div>
+        <!-- <div class="col-md-3"></div> -->
+      </div>
+      
+    </div>
+
+    <section class="section2 section">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Trigger button -->
+
+          <div class="col-lg-12" style="text-align: center;margin-top: 50px;margin-bottom: 50px;">
+             <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mymodal">Subscribe Now!</button>
+          </div>
+         
+          <!-- Modal -->
+          <div class="modal fade" role="dialog" id="mymodal">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content ">
+                <!-- Header -->
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4>Buy Our Books Online</h4>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                  <h1>Best Seller Books</h1>
+                  <img src="assets/images/book.jpg" width="150" height="100" alt="Sky">
+                  <br/>
+                  <p style="margin-top: 20px;">With captions Add captions to your slides easily with the .carousel-caption element within any .carousel-item. They can be easily hidden on smaller viewports, as shown below, with optional display utilities. We hide them initially with .d-none and bring them back on medium-sized devices with .d-md-block. If your content is not visible enough, you can cover the image with a darker mask. You can easily change the intensity and color of the mask. To learn more read our MASKS documentation.
+                  <p>
+                </div>
+                <!-- Footer -->
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="section3 section">
+      <div class="container">
+        <h1 class="text-center">India's Best <small>Seller Books.</small>
+        </h1>
+        </br>
+        </br>
+        <div class="row justify-content-center">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <form>
+              <!-- <div class="input-group"><span class="input-group-addon">Username</i></span><input type="text" class="form-control" name="username"></div><div class="input-group"><span class="input-group-addon">Address</span><textarea class="form-control" name="username"></textarea></div><div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span><input type="password" class="form-control" name="username"></div> -->
+              <div class="input-group input-group-sm input-group-lg">
+                <!-- <span class="input-group-addon">Username</i></span> -->
+                <input type="text" class="form-control" name="username">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit">
+                    <i class="glyphicon glyphicon-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+        <div class="tab-content bookcat_row">
+
+          <div class="tab-pane active" id="bookcat1">
+
+            <h1 class="text-center">Book Seller 1</h1>
+            <br/>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="bookcat">
+                  <img src="assets/images/bookicon.png">
+                  <h3>Book 1</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                
+              </div>
+              <div class="col-md-4">
+                <div class="bookcat">
+                  <img src="assets/images/bookicon.png">
+                  <h3>Book 2</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                
+              </div>
+              <div class="col-md-4">
+                <div class="bookcat">
+                  <img src="assets/images/bookicon.png">
+                  <h3>Book 3</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="bookcat2">
+
+            <h1 class="text-center">Book Seller 2</h1>
+            <br/>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="bookcat">
+                  <img src="assets/images/bookicon.png">
+                  <h3>Book 1</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                
+              </div>
+              <div class="col-md-4">
+                <div class="bookcat">
+                  <img src="assets/images/bookicon.png">
+                  <h3>Book 2</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                
+              </div>
+              <div class="col-md-4">
+                <div class="bookcat">
+                  <img src="assets/images/bookicon.png">
+                  <h3>Book 3</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="bookcat3">
+
+            <h1 class="text-center">Book Seller 3</h1>
+            <br/>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="bookcat">
+                  <img src="assets/images/bookicon.png">
+                  <h3>Book 1</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                
+              </div>
+              <div class="col-md-4">
+                <div class="bookcat">
+                  <img src="assets/images/bookicon.png">
+                  <h3>Book 2</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                
+              </div>
+              <div class="col-md-4">
+                <div class="bookcat">
+                  <img src="assets/images/bookicon.png">
+                  <h3>Book 3</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="row">
+          <div class="center">
+            <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#bookcat1" data-toggle="tab">1</a>
+            <a href="#bookcat2" data-toggle="tab" class="active">2</a>
+            <a href="#bookcat3" data-toggle="tab">3</a>
+            <a href="#">&raquo;</a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    
+    
+
+    <section class="section5 section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            
+            <div class="panel panel-danger">
+              <!-- Panel Header -->
+              <div class="panel-heading text-center"><h2>Books Category</h2></div>
+              <!-- Panel Body -->
+              <div class="panel-body text-center">
+                <br>
+                <div class="row">
+                  <div class="col-md-3">
+                    <ul class="nav nav-pills nav-stacked">
+                      <li>
+                        <a href="#mahindra" data-toggle="tab">Book1</a>
+                      </li>
+                      <li class="active">
+                        <a href="#tata" data-toggle="tab">Book2</a>
+                      </li>
+                      <li>
+                        <a href="#toyota" data-toggle="tab">Book3</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-9">
+                    <div class="tab-content">
+                      <div id="mahindra" class="tab-pane"> This is default. The browser calculates the height and width
+            length - Defines the height/width in px, cm, etc.
+            % - Defines the height/width in percent of the containing block <br>
+            <br/>
+                        <div class="dropdown">
+                          <button class="btn btn-primary" type="button" data-toggle="dropdown">Select Books <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li class="dropdown-header">Book1</li>
+                            <li class="active">
+                              <a href="#">abc</a>
+                            </li>
+                            <li>
+                              <a href="#">dcd</a>
+                            </li>
+                            <li class="disabled">
+                              <a href="#">xre</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Book2</li>
+                            <li>
+                              <a href="#">des</a>
+                            </li>
+                            <li>
+                              <a href="#">dese</a>
+                            </li>
+                            <li>
+                              <a href="#">ssgg</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div id="tata" class="tab-pane active">This is default. The browser calculates the height and width
+            length - Defines the height/width in px, cm, etc.
+            % - Defines the height/width in percent of the containing block</div>
+                      <div id="toyota" class="tab-pane"> This is default. The browser calculates the height and width
+            length - Defines the height/width in px, cm, etc.
+            % - Defines the height/width in percent of the containing block </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Panel Footer -->
+              <!-- <div class="panel-footer">
+                <a class="btn btn-primary float-right">Next</a>
+              </div> -->
+            </div>
+
+          </div>
+          <div class="col-lg-5">
+            <img src="assets/images/book1.png" class="section5_img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section6 section">
+      <div class="container">
+       
+        <div class="row" style="margin-top:50px">
+          <div class="col-md-3"> 
+            <div id="mail_cat" class="mail_cat">
+              <h4>Books Category: </h4>
+              <div class="list-group">
+                <a href="#" class="list-group-item active" data-toggle="collapse" data-target="#msg">Mythologoy <span class="badge">4</span>
+                </a>
+                <a href="#" class="list-group-item">Love Story <span class="badge">3</span></a>
+                <a href="#" class="list-group-item">Horror <span class="badge">10</span></a>
+                <a href="#" class="list-group-item">History <span class="badge">50</span></a>
+              </div>  
+            </div>
+            
+          </div>
+          <div id="mails" class="col-md-9">
+            <div id="msg" class="collapse in">
+              <h1 class="">Online Book Store</h1>
+              <br/>
+
+              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered altera tion in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden.</p>
+              <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+
+              <ul class="list-service-details">
+                    <li>Sed do eiusmod tempor incididunt ut</li>
+                    <li>Labore et dolore magna aliqua</li>
+                    <li>Ut enim ad minim veniam quis nostrud</li>
+                    <li>Andomised words which don't look</li>
+              </ul>
+
+              
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:50px">
+          <div class="col-md-3">
+            <div class="mailcat2">
+              <div class="panel panel-danger">
+                <div class="panel-heading">
+                  <h3>Quick Contacts</h3>
+                </div>
+                <div class="panel-body">
+                  <p><i class="glyphicon glyphicon-map-marker"></i> 3111 West Allegheny, USA</p>
+                  <p><i class="glyphicon glyphicon-phone"></i> 1212112212121</p>
+                  <p><i class="glyphicon glyphicon-envelope"></i> infor@gmail.com</p>
+                  <p>Lorem Ipsum has been the industry’s standard dummy text ever.</p>
+                </div>
+                <div class="panel-footer">
+                  <h5><i class="glyphicon glyphicon-file"></i> Company Presentation</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-9">
+            <h1 class="">Online Book Strategy</h1>
+              <br/>
+            <div class="row">
+                <div class="col-lg-3"><h4>Mythology Books</h4></div>
+                <div class="col-lg-9">
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85" style="width:75%"> 75% completed </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-3"><h4>Horror Books</h4></div>
+                <div class="col-lg-9">
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85" style="width:50%"> 50% completed </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-3"><h4>Love-story Books</h4></div>
+                <div class="col-lg-9">
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85" style="width:25%"> 25% completed </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-3"><h4>History Books</h4></div>
+                <div class="col-lg-9">
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85" style="width:80%"> 80% completed </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-3"><h4>Geography Books</h4></div>
+                <div class="col-lg-9">
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85" style="width:40%"> 40% completed </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section7 section">
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center">Books Record</h1>
+          <br/>
+            <table class="table table-bordered">
+                        <thead>
+                           <tr><th>Sr No.</th>
+                           <th>Category</th>
+                           <th>Type</th>
+                           <th>Distribution</th>
+                        </tr></thead>
+                        <tbody>
+                           <tr>
+                              <td class="plan_name"><!-- <img src="assets/images/planicon/1.png">  --><span class="plan_head">1</span></td>
+                              <td>Category 1</td>
+                              <td>Type 1</td>
+                              <td rowspan="3" style="vertical-align : middle;text-align:center;">50% Daily <span class="label label-success">Submitted</span></td>
+
+                           </tr>
+                           <tr>
+                              <td class="plan_name"><!-- <img src="assets/images/planicon/2.png">  --><span class="plan_head">2</span></td>
+                              <td>Category 2</td>
+                              <td>Type 3</td>
+                           </tr>
+                           <tr>
+                              <!-- <td>Baron</td> -->
+                              <td class="plan_name"><!-- <img src="assets/images/planicon/3.png"> --> <span class="plan_head">3</span></td>
+                              <td>Category 3</td>
+                              <td>Type 3</td>
+                           </tr>
+                           <tr>
+                              <!-- <td>Comes</td> -->
+                              <td class="plan_name"><!-- <img src="assets/images/planicon/4.png"> --> <span class="plan_head">4</span></td>
+                              <td>Category 4</td>
+                              <td>Type 4</td>
+                              <td rowspan="3" style="vertical-align : middle;text-align:center;">10% Daily </td>
+                           </tr>
+                           <tr>
+                              <!-- <td>Earl</td> -->
+                              <td class="plan_name"><!-- <img src="assets/images/planicon/5.png"> --> <span class="plan_head">5</span></td>
+                              <td>Category 5</td>
+                              <td>Type 5</td>
+                           </tr>
+                           <tr>
+                              <!-- <td>Marchio</td> -->
+                              <td class="plan_name"><!-- <img src="assets/images/planicon/6.png"> --> <span class="plan_head">6</span></td>
+                              <td>Category 6</td>
+                              <td>Type 6</td>
+                           </tr>
+                           <tr>
+                              <!-- <td>Prorex</td> -->
+                              <td class="plan_name"><!-- <img src="assets/images/planicon/7.png"> --> <span class="plan_head">7</span></td>
+                              <td>Category 7</td>
+                              <td>Type 7</td>
+                              <td rowspan="3" style="vertical-align : middle;text-align:center;">25% Daily <span class="label label-success">Submitted</span></td>
+
+                           </tr>
+                           <tr>
+                              <!-- <td>Knight</td> -->
+                              <td class="plan_name"><!-- <img src="assets/images/planicon/8.png"> --> <span class="plan_head">8</span></td>
+                              <td>Category 8</td>
+                              <td>Type 8</td>
+                           </tr>
+                           <tr>
+                              <!-- <td>Monarch</td> -->
+                              <td class="plan_name"><!-- <img src="assets/images/planicon/9.png"> --> <span class="plan_head">9</span></td>
+                              <td>Category 9</td>
+                              <td>Type 9</td>
+                           </tr>
+                        </tbody>
+            </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section4 section">
+      <div class="container">
+        <h1 class="text-center">Contact Us</h1>
+        <h5 class="text-center">Fill the form to register</h5>
+        <br/>
+        <br/>
+        <div class="contact_section">
+          <div class="row" style="margin-bottom: -10px;">
+          
+            <div class="col-md-6">
+              <img src="assets/images/contact-us.png" width="100%">
+            </div>
+            <div class="col-md-6">
+              <form action="" class="form-horizontal" method="post">
+                <div class="form-group">
+                  <label for="username" class="control-label col-md-4">Enter Username:</label>
+                  <div class="col-md-8">
+                    <input id="username" name="username" class="form-control" type="text">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="address" class="control-label col-md-4">Enter Address:</label>
+                  <div class="col-md-8">
+                    <textarea id="address" name="address" class="form-control" rows="5"></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="pwd" class="control-label col-md-4">Enter Password:</label>
+                  <div class="col-md-8">
+                    <input id="pwd" name="pass" class="form-control" type="password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="pwd" class="control-label col-md-4">Book Category:</label>
+                  <div class="col-md-8">
+                    <div class="checkbox-inline">
+                      <label>
+                        <input type="checkbox" value="1">Book1 </label>
+                    </div>
+                    <div class="checkbox-inline">
+                      <label>
+                        <input type="checkbox" value="2">Book2 </label>
+                    </div>
+                    <div class="checkbox-inline">
+                      <label>
+                        <input type="checkbox" value="3">Book3 </label>
+                    </div>
+                    <div class="checkbox-inline disabled">
+                      <label>
+                        <input type="checkbox" value="4" disabled>Book4 </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="pwd" class="control-label col-md-4">Books Order:</label>
+                  <div class="col-md-8">
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="full-stack" value="1">One </label>
+                    </div>
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="full-stack" value="1">Two </label>
+                    </div>
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="full-stack" value="1">Three </label>
+                    </div>
+                    <div class="radio-inline disabled">
+                      <label>
+                        <input type="radio" name="full-stack" value="1" disabled>Above 3 </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-md-4" for="lang">Book Language</label>
+                  <div class="col-md-8">
+                    <select name="lang" id="lang" class="form-control" multiple>
+                      <option value="html">English</option>
+                      <option value="css">Hindi</option>
+                      <option value="bs">Marathi</option>
+                      <option value="angular">Telegu</option>
+                    </select>
+                    <span class="help-block">Note:User Ctr button to select multiple items.</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <!-- <div class="col-md-4"></div> -->
+                  <div class="col-md-12" style="text-align: center;">
+                    <input class="btn btn-default" type="submit">
+                  </div>
+                </div>
+              </form>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <p class="text-center">All right reserved 2022.<a href="#"> Book Shoping</a></p>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    $(document).ready(function() {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+</html>
